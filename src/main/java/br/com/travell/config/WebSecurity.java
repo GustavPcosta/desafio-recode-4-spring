@@ -21,7 +21,7 @@ public class WebSecurity extends WebSecurityConfigurerAdapter{
 	  @SuppressWarnings("deprecation")
 	@Override
 	    protected void configure(HttpSecurity http) throws Exception {
-	        http.authorizeHttpRequests()
+	        http.authorizeRequests()
 	        .requestMatchers("/adminlte/**").permitAll()
 	            .requestMatchers("/img/**").permitAll()
 	            .requestMatchers("/js/**").permitAll()
